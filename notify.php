@@ -8,7 +8,7 @@ header( 'HTTP/1.0 200 OK' );
 flush();
 
 // -- store payfast data
-define( 'SANDBOX_MODE', false );
+define( 'SANDBOX_MODE', true );
 $pfHost = SANDBOX_MODE ? 'sandbox.payfast.co.za' : 'www.payfast.co.za';
 // Posted variables from ITN
 $pfData = $_POST;
