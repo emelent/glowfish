@@ -3,7 +3,7 @@ define('PRODUCTION', false);
 
 $merch_id = (PRODUCTION)? "11274014" : "10003805";
 $merch_key = (PRODUCTION)? "zeo9u5nqkgk2q": "e1jkl1rv70689"; 
-$proc_url = (PRODUTION)? 
+$proc_url = (PRODUCTION)? 
   "https://www.payfast.co.za/eng/process" :
   "https://sandbox.payfast.co.za/eng/process";
 ?>
