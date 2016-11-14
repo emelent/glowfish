@@ -1,5 +1,5 @@
 <?php
-define(PRODUCTION, false);
+define('PRODUCTION', false);
 
 $merch_id = (PRODUCTION)? "11274014" : "10003805";
 $merch_key = (PRODUCTION)? "zeo9u5nqkgk2q": "e1jkl1rv70689"; 
