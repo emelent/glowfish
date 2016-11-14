@@ -1,3 +1,3 @@
 <?php
 
-echo "cancel url\n";
+echo "Payment cancelled\n";
