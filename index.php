@@ -8,8 +8,6 @@
   <title>GlowFish</title>
 </head>
 <body>
-  <form action="" method="POST">
-    <button>Submit</button>
-  </form>
+  <a href="https://glowfish.herokuapp.com/confirmation.php">Pay</a>
 </body>
 </html>
