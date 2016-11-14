@@ -8,7 +8,7 @@ header( 'HTTP/1.0 200 OK' );
 flush();
 
 // -- store payfast data
-define( 'SANDBOX_MODE', true );
+define( 'SANDBOX_MODE', false );
 $pfHost = SANDBOX_MODE ? 'sandbox.payfast.co.za' : 'www.payfast.co.za';
 // Posted variables from ITN
 $pfData = $_POST;
@@ -37,7 +37,7 @@ foreach( $pfData as $key => $val )
 $pfParamString = substr( $pfParamString, 0, -1 );
 $pfTempParamString = $pfParamString;
 // If a passphrase has been set in the PayFast Settings, then it needs to be included in the signature string.
-$passPhrase = ''; //You need to get this from a constant or stored in you website database
+$passPhrase = 'GUMBA'; //You need to get this from a constant or stored in you website database
 /// !!!!!!!!!!!!!! If you testing your integration in the sandbox, the passPhrase needs to be empty !!!!!!!!!!!!
 if( !empty( $passPhrase ) && !SANDBOX_MODE )
 {

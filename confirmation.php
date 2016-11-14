@@ -8,9 +8,9 @@
   <title></title>
 </head>
 <body>
-  <form action="https://sandbox.payfast.co.za/eng/process" method="POST">
+  <form action="https://www.payfast.co.za/eng/process" method="POST">
     <!-- Merchant Details -->
-    <input type="hidden" name="merchant_id" value="10003805"/>
+    <input type="hidden" name="merchant_id" value="11274014"/>
     <input type="hidden" name="merchant_key" value="e1jkl1rv70689"/>
     <input type="hidden" name="return_url" value="https://glowfish.herokuapp.com/return.php"/>
     <input type="hidden" name="cancel_url" value="https://glowfish.herokuapp.com/cancel.php"/>
