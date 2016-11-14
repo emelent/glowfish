@@ -1,3 +1,3 @@
 <?php
 
-echo "return url\n";
+echo "Payment successful\n";
