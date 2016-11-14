@@ -1,5 +1,11 @@
 <?php
+define(PRODUCTION, false);
 
+$merch_id = (PRODUCTION)? "11274014" : "10003805";
+$merch_key = (PRODUCTION)? "zeo9u5nqkgk2q": "e1jkl1rv70689"; 
+$proc_url = (PRODUTION)? 
+  "https://www.payfast.co.za/eng/process" :
+  "https://sandbox.payfast.co.za/eng/process";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,10 +14,10 @@
   <title></title>
 </head>
 <body>
-  <form action="https://sandbox.payfast.co.za/eng/process" method="POST">
+<form action="<?php echo $proc_url;?>" method="POST">
     <!-- Merchant Details -->
-    <input type="hidden" name="merchant_id" value="11274014"/>
-    <input type="hidden" name="merchant_key" value="zeo9u5nqkgk2q"/>
+    <input type="hidden" name="merchant_id" value="<?php echo $merch_id;?>"/>
+    <input type="hidden" name="merchant_key" value="<?php echo $merch_key;?>"/>
     <input type="hidden" name="return_url" value="https://glowfish.herokuapp.com/return.php"/>
     <input type="hidden" name="cancel_url" value="https://glowfish.herokuapp.com/cancel.php"/>
     <input type="hidden" name="notify_url" value="https://glowfish.herokuapp.com/notify.php"/>
